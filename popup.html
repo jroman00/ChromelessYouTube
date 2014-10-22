@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>Chromeless YouTube</title>
+	<style>
+		body {
+			overflow-x: hidden;
+			min-width: 357px;
+		}
+
+		.cta-button {
+			display: inline-block;
+			position: relative;
+			margin: 0;
+			padding: 0.4em 0.9em;
+			font: bold 18px/1 Arial, sans-serif;
+			text-align: center;
+			text-decoration: none;
+			text-transform: none;
+			white-space: normal;
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+			border: 1px solid transparent;
+			border-radius: 0.4em;
+			box-shadow: inset 0px 1px 1px #fff;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.cta-button--primary {
+			border: none;
+			background: #0089d0;
+			color: #fff;
+			text-shadow: 1px 0 0 0 rgba(0, 0, 0, 1);
+		}
+		.cta-button--primary:active {
+			background-color: #006fb6;
+			background-image: none;
+			box-shadow: none;
+			text-shadow: none;
+			transform: translateY(1px);
+		}
+
+		.cta-button--disabled,
+		.cta-button--disabled:active {
+			text-shadow: none;
+			background: #000;
+			box-shadow: none;
+			opacity: 0.3;
+			cursor: default;
+			transform: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Chromeless YouTube</h1>
+	<ol>
+		<li>Visit a YouTube video page (e.g. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This video</a>).</li>
+		<li>Click the button below.</li>
+	</ol>
+	<span id="watch-video" class="cta-button cta-button--primary cta-button--disabled">
+		Watch Video
+	</span>
+
+	<script src="jquery.js"></script>
+	<script src="popup.js"></script>
+</body>
+</html>
